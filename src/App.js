@@ -46,7 +46,7 @@ function Home() {
   return (
     <div>
       <h1>Welcome Back To My Store :)</h1>
-      <h1>Click [Shoes] to view some nike shoes in my store :)</h1>
+      <h1>Click Shoes Link to view some nike shoes in my store :)</h1>
     </div>
   );
 }
