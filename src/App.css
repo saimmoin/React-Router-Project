@@ -1,0 +1,86 @@
+.hi {
+  font-size: 15px;
+  font-family: "Courier New", Courier, monospace;
+  color: lime;
+  text-decoration: underline;
+}
+
+h2 {
+  color: lime;
+  font-size: 15px;
+}
+/*@keyframes: The @keyframes rule specifies the animation code.The animation is created by gradually changing from one set of CSS styles to another.During the animation, you can change the set of CSS styles many times*/
+
+@keyframes swing {
+  0%,
+  100% {
+    transform: rotate(-30deg);
+  }
+  20% {
+    transform: scale(0.95);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  /*Scale: The scale() CSS function defines a transformation that resizes an element on the 2D plane*/
+  80% {
+    transform: scale(0.95);
+  }
+}
+
+img {
+  animation: swing 3s ease-in-out;
+  border: lime solid 5px;
+}
+
+h1 {
+  color: lime;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end);
+}
+/*h1:nth-child(2): Specify a animation for every <h1> element that is the second child of its parent */
+h1:nth-child(2) {
+  animation: type2 8s steps(60, end);
+}
+
+h1 a {
+  color: lime;
+  text-decoration: none;
+}
+/* Span: mark up a part of a text, or a part of a document*/
+span {
+  animation: blink 1s infinite;
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes type2 {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 0;
+  }
+  100% {
+    width: 100;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+::selection {
+  background: black;
+}
